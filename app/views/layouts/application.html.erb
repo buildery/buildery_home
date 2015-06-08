@@ -3,10 +3,7 @@
 <head>
   <title>buildery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" media="only screen and (min-width: 481px)" href="/assets/buildery-desktop.css.scss" />
-  <link rel="stylesheet" media="only screen and (min-device-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 1)" href="/assets/buildery-mobile.css.scss" />
-  <link rel="stylesheet" media="only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="/assets/buildery-mobile.css.scss" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'favicon.ico' %>
