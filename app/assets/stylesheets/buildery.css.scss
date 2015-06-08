@@ -4,7 +4,7 @@ body{
 }
 
 .navbar-fixed-top .nav {
-    padding: 15px 0;
+    padding: 30px 0;
     background-color: white;
 }
 
@@ -24,7 +24,7 @@ body{
   }
 
   .navbar-header{
-    height: 85px;
+    height: 100px;
     background-color: white;
     border-bottom: 1px solid $buildery-light-blue;
   }
@@ -34,8 +34,12 @@ body{
     border: 1px solid white;
   }
 
+  .navbar-fixed-top .nav {
+    padding: 15px 0;
+  }
+
   .navbar-toggle{
-    margin-top: 25px;
+    margin-top: 35px;
     border: 1px solid $buildery-light-blue;
     background-color: $buildery-light-blue;
   }
