@@ -7,15 +7,16 @@ body{
 .welcome-banner{
   margin-top: 112px;
   height: 500px;
-  background: url("office.jpg") no-repeat;
+  background: url(asset-path('office.jpg')) no-repeat;
   background-size: 100%;
   background-color: $buildery-light-blue;
   background-blend-mode: multiply;
 }
 
-.welcome-text-container{
+.welcome-text{
   position: absolute;
   z-index: 1000;
+  min-width: 300px;
   background-color: $buildery-light-blue;
   padding: 10px;
   color: white;
@@ -129,7 +130,7 @@ body{
   .welcome-banner{
     margin-top: 112px;
     height: 720px;
-    background: url("office.jpg") no-repeat;
+    background: url(asset-path('office.jpg')) no-repeat;
     background-size: 100%;
     background-color: $buildery-light-blue;
     background-blend-mode: multiply;

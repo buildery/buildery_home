@@ -44,7 +44,7 @@
 .welcome-banner{
   margin-top: 112px;
   height: 200px;
-  background: url("office.jpg") no-repeat;
+  background: url(asset-path('office.jpg')) no-repeat;
   background-size: 100%;
   background-color: $buildery-light-blue;
   background-blend-mode: multiply;
