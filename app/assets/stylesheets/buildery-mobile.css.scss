@@ -3,7 +3,13 @@ body{
   width: 100%;
 }
 
-div.navbar-header{
+.navbar-header{
   height: 85px;
   background-color: white;
+}
+
+.navbar-header .navbar, .navbar-inverse, .navbar-fixed-top{
+  background-color: white;
+  border: 1px solid white;
+  height: 85px;
 }
