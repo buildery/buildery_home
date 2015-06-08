@@ -18,20 +18,47 @@ body{
   border: 1px solid white;
 }
 
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    background-color: red;
+@media (max-width: 600px){
+  body{
 
-}
-/*.navbar-header{
-  height: 85px;
-  background-color: white;
-}
+  }
 
-.navbar-header .navbar, .navbar-inverse, .navbar-fixed-top{
-  background-color: white;
-  border: 1px solid white;
-  height: 85px;
-}*/
+  .navbar-header{
+    height: 85px;
+    background-color: white;
+    border-bottom: 1px solid $buildery-light-blue;
+  }
+
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    background-color: white;
+    border: 1px solid white;
+  }
+
+  .navbar-toggle{
+    margin-top: 25px;
+    border: 1px solid $buildery-light-blue;
+    background-color: $buildery-light-blue;
+  }
+
+  .navbar-inverse .navbar-toggle:hover .icon-bar{
+    background-color: $buildery-light-blue;
+  }
+
+  .navbar-inverse .navbar-toggle:focus .icon-bar{
+    background-color: $buildery-light-blue;
+  }
+
+  .navbar-inverse .navbar-toggle{
+    border: 1px solid $buildery-light-blue;
+  }
+
+  .navbar-inverse .navbar-toggle:hover{
+    background-color: white;
+    border: 1px solid $buildery-light-blue;
+  }
+
+  .navbar-inverse .navbar-toggle:focus{
+    background-color: white;
+    border: 1px solid $buildery-light-blue;
+  }
+}
