@@ -1,25 +1,4 @@
 // colors
-$cloud: #ecf0f1;
-$gray:  #464646;
-$green: #7cdfa4;
-$red:   #F74352;
-
-$border-radius-base: 0;
-
-// navbars
-$navbar-default-brand-color:                $green;
-$navbar-default-bg:                         $gray;
-$navbar-default-link-color:                 $cloud;
-$navbar-default-link-hover-color:           darken($navbar-default-link-color, 15%);
-$navbar-default-link-active-color:          $navbar-default-link-hover-color;
-$navbar-default-link-hover-bg:              #363636;
-$navbar-default-toggle-hover-bg:            $green !default;
-$navbar-default-toggle-border-color:        $green !default;
-
-// buttons
-$btn-primary-bg:                            $green;
-$btn-primary-color:                         $gray;
-$btn-primary-border:                        $green;
-
-// tables
-$table-bg:                                 $gray;
+$buildery-light-blue: #348EB8;
+$buildery-dark-blue: #46637F;
+$buildery-gray:  #7E879E;
