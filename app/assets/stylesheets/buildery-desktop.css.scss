@@ -4,6 +4,24 @@ body{
   font-family: 'Source Sans Pro';
 }
 
+.welcome-banner{
+  margin-top: 112px;
+  height: 500px;
+  background: url("office.jpg") no-repeat;
+  background-size: 100%;
+  background-color: $buildery-light-blue;
+  background-blend-mode: multiply;
+}
+
+.welcome-text-container{
+  position: absolute;
+  z-index: 1000;
+  background-color: $buildery-light-blue;
+  padding: 10px;
+  color: white;
+  margin: 10% 60%;
+}
+
 .navbar-fixed-top .nav {
     padding: 30px 0;
     background-color: white;
@@ -105,4 +123,15 @@ body{
   font-size: 16px;
   background-color: #1f1f1f;
   color: #b1aca0;
+}
+
+@media (min-width: 1400px){
+  .welcome-banner{
+    margin-top: 112px;
+    height: 720px;
+    background: url("office.jpg") no-repeat;
+    background-size: 100%;
+    background-color: $buildery-light-blue;
+    background-blend-mode: multiply;
+  }
 }
