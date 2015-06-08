@@ -46,16 +46,31 @@ body{
   height: 500px;
 }
 
+.section-title{
+  padding-top: 50px;
+  font-size: 35px;
+  color: $buildery-dark-blue;
+}
 .about{
   background-color: white;
   min-height: 600px;
 }
 
-.services{
+.contact{
   background-color: $buildery-light-blue;
   min-height: 600px;
+  text-align: center;
 }
 
+.contact-form{
+  padding: 50px 25px 25px 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-control{
+  border-radius: 0px;
+}
 .site-map{
   background-color: #1f1f1f;
   min-height: 600px;
