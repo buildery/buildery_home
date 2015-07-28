@@ -47,7 +47,7 @@
 
   .welcome-banner{
     margin-top: 78px;
-    height: 180px;
+    height: 200px;
     background: url(asset-path('office.jpg')) no-repeat;
     background-size: 100%;
     background-color: $buildery-light-blue;
@@ -59,7 +59,6 @@
   }
 
   .wt-one{
-/*    width: 262px;*/
     width: 185px;
     padding: 10px;
     font-size: 12px;
@@ -75,7 +74,7 @@
   .wt-three{
     margin-top: 5px;
     width: 250px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
 }

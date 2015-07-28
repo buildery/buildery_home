@@ -16,15 +16,15 @@ body{
 .welcome-text-container{
   position: absolute;
   z-index: 1000;
-  margin: 10% 60%;
+  margin: 8% 60%;
 }
 
 .wt-one{
-  width: 262px;
+  width: 320px;
   background-color: $buildery-gray;
   padding: 10px;
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   font-family: "Lato";
   font-weight: 300;
   font-style: normal;
@@ -32,11 +32,11 @@ body{
 
 .wt-two{
   margin-top: 15px;
-  width: 350px;
+  width: 410px;
   background-color: $buildery-light-blue;
-  padding: 10px;
+  padding: 15px;
   color: white;
-  font-size: 35px;
+  font-size: 40px;
   font-family: "Lato";
   font-weight: 300;
   font-style: normal;
@@ -168,6 +168,15 @@ body{
   font-size: 16px;
   background-color: #1f1f1f;
   color: #b1aca0;
+}
+
+@media (min-width: 765px) and (max-width: 1055px){
+  .welcome-text-container{
+    margin: 8% 50%;
+  }
+  .welcome-banner{
+    height: 460px;
+  }
 }
 
 @media (min-width: 1400px){
