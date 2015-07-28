@@ -13,19 +13,54 @@ body{
   background-blend-mode: multiply;
 }
 
-.welcome-text{
+.welcome-text-container{
   position: absolute;
   z-index: 1000;
-  min-width: 300px;
+  margin: 10% 60%;
+}
+
+.wt-one{
+  width: 262px;
+  background-color: $buildery-gray;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.wt-two{
+  margin-top: 15px;
+  width: 350px;
   background-color: $buildery-light-blue;
   padding: 10px;
   color: white;
-  margin: 10% 60%;
+  font-size: 35px;
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.wt-three{
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.welcome-text-container span{
+  font-size: 25px;
 }
 
 .navbar-fixed-top .nav {
     padding: 30px 0;
     background-color: white;
+    font-family: "Lato";
+    font-weight: 400;
+    font-style: normal;
 }
 
 .navbar-fixed-top .navbar-brand {
@@ -36,6 +71,15 @@ body{
 .navbar, .navbar-inverse, .navbar-fixed-top{
   background-color: white;
   border: 1px solid white;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color: $buildery-light-blue;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: white;
+  background-color: $buildery-light-blue;
 }
 
 .btn-primary{

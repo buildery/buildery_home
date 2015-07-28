@@ -41,12 +41,37 @@
     border: 1px solid $buildery-light-blue;
   }
 
-.welcome-banner{
-  margin-top: 112px;
-  height: 180px;
-  background: url(asset-path('office.jpg')) no-repeat;
-  background-size: 100%;
-  background-color: $buildery-light-blue;
-  background-blend-mode: multiply;
-}
+  .welcome-banner{
+    margin-top: 112px;
+    height: 180px;
+    background: url(asset-path('office.jpg')) no-repeat;
+    background-size: 100%;
+    background-color: $buildery-light-blue;
+    background-blend-mode: multiply;
+  }
+
+  .welcome-text-container{
+    margin: 4% 15%;
+  }
+
+  .wt-one{
+/*    width: 262px;*/
+    width: 185px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .wt-two{
+    margin-top: 10px;
+    width: 250px;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .wt-three{
+    margin-top: 5px;
+    width: 250px;
+    font-size: 12px;
+  }
+
 }
