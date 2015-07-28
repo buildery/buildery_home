@@ -1,6 +1,6 @@
 @media (max-width: 766px){
   .navbar-header{
-    height: 100px;
+    height: 75px;
     background-color: white;
   }
 
@@ -13,8 +13,12 @@
     padding: 15px 0;
   }
 
+  .navbar-fixed-top .navbar-brand{
+    padding: 15px;
+  }
+
   .navbar-toggle{
-    margin-top: 35px;
+    margin-top: 20px;
     border: 1px solid $buildery-light-blue;
     background-color: $buildery-light-blue;
   }
@@ -42,7 +46,7 @@
   }
 
   .welcome-banner{
-    margin-top: 112px;
+    margin-top: 78px;
     height: 180px;
     background: url(asset-path('office.jpg')) no-repeat;
     background-size: 100%;
@@ -51,7 +55,7 @@
   }
 
   .welcome-text-container{
-    margin: 4% 15%;
+    margin: 4% 5%;
   }
 
   .wt-one{
