@@ -87,7 +87,7 @@
   }
 
   .service-name{
-    font-size: 6px;
+    font-size: 8px;
   }
 
   .service-name-large{
@@ -99,7 +99,6 @@
     text-align: center;
   }
 
-
   .service-detail-left .glyphicon{
     font-size: 100px;
   }
@@ -107,7 +106,12 @@
   .service-detail-right{
     padding: 25px;
     margin-top: -200px;
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .contact{
+    padding: 100px 25px;
+    min-height: 300px;
   }
 }
 
@@ -133,7 +137,7 @@
   .service-detail-right{
     padding: 25px 100px;
     margin-top: -155px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
   }
 }
