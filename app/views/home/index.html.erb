@@ -15,9 +15,6 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li>
-          <a href="">about</a>
-        </li>
-        <li>
           <a href="">our services</a>
         </li>
         <li>
@@ -42,70 +39,147 @@
 
 <div class="services">
   <div class="row">
-    <div class="service-outer col-lg-4 col-md-4 col-sm-6 col-xs-6">
+    <div class="service-outer col-xs-4" id="responsive">
       <div class="service-inner">
         <span class="glyphicon glyphicon-phone" ></span>
         <p class="service-name">Responsive Multi-Platform Design</p>
       </div>
     </div>
-    <div class="service-outer col-lg-4 col-md-4 col-sm-6 col-xs-6">
+    <div class="service-outer col-xs-4" id="custom">
       <div class="service-inner">
         <span class="glyphicon glyphicon-scissors" ></span>
         <p class="service-name">Custom Web Design</p>
       </div>
     </div>
-    <div class="service-outer col-lg-4 col-md-4 col-sm-6 col-xs-6">
+    <div class="service-outer col-xs-4" id="seo">
       <div class="service-inner">
         <span class="glyphicon glyphicon-signal" ></span>
         <p class="service-name">SEO</p>
       </div>
     </div>
-    <div class="service-outer col-lg-4 col-md-4 col-sm-6 col-xs-6">
-      <div class="service-inner">
-        <span class="glyphicon glyphicon-pencil" ></span>
-        <p class="service-name">Blog Platforms</p>
+  </div>
+</div>
+
+<div class="service-detail">
+
+  <div class="row" id="responsive_detail">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="service-detail-left">
+        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+        <br>
+        <span class="service-name-large">Responsive Multi-Platform Design</span>
       </div>
     </div>
-    <div class="service-outer col-lg-4 col-md-4 col-sm-6 col-xs-6">
-      <div class="service-inner">
-        <span class="glyphicon glyphicon-folder-open" ></span>
-        <p class="service-name">CMS</p>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="service-detail-right">
+        We build fully responsive sites that will adapt
+        to any device.<br>Rather its desktop, mobile, or tablet,
+        your site will always look great to your customer.
+        <br><br>
+<!--         <button type="button" class="btn btn-default btn-lg main-button">
+          CONTACT US
+        </button> -->
       </div>
     </div>
-    <div class="service-outer col-lg-4 col-md-4 col-sm-6 col-xs-6">
-      <div class="service-inner">
-        <span class="glyphicon glyphicon-picture" ></span>
-        <p class="service-name">Logo Design</p>
+  </div>
+
+  <div class="row" id="custom_detail" style="display: none">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="service-detail-left">
+        <span class="glyphicon glyphicon-scissors" aria-hidden="true"></span>
+        <br>
+        <span class="service-name-large">Custom Web Design</span>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="service-detail-right">
+        No more limitations of cookie-cutter options. We create custom sites
+        with a focus on modern and clean design.
+        <br><br>
+<!--         <button type="button" class="btn btn-default btn-lg main-button">
+          CONTACT US
+        </button> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="seo_detail" style="display: none">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="service-detail-left">
+        <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+        <br>
+        <span class="service-name-large">SEO</span>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="service-detail-right">
+        Make sure your customers can find you. We implement SEO
+        strategies to bring more traffic to both your site and business!
+        <br><br>
+<!--         <button type="button" class="btn btn-default btn-lg main-button">
+          CONTACT US
+        </button> -->
       </div>
     </div>
   </div>
 </div>
 
+
+
 <div class="contact">
-<!--   <div class="section-title">Contact Us</div>
-  <div class="contact-form">
-    <form>
-      <div class="form-group">
-        <input type="text" class="form-control" id="" placeholder="name">
-      </div>
-      <div class="form-group">
-        <input type="email" class="form-control" id="" placeholder="email">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" id="" placeholder="phone number">
-      </div>
-      <div class="form-group">
-        <textarea class="form-control" id="" placeholder="message" style="height: 200px"></textarea>
-      </div>
-      <a class="btn btn-lg btn-primary" style="border-color: white" href="#" role="button">submit</a>
-    </form>
-  </div> -->
+  <div class="contact-large">Ready to start building?</div>
+  <a href="mailto:chris@buildery.io">chris@buildery.io</a><br>
+  &nbsp; 614.359.6102<br>
 </div>
 
-<div class="site-map">
-
-</div>
 <div class="footer">
   &copy; buildery.io<br>
-  tampa, fl &nbsp; 614.359.6102<br>
 </div>
+
+<script>
+
+  $("#responsive").mouseover(function(){
+    $("#responsive .glyphicon-phone").css("color","#2f88f7")
+    $("#responsive .service-name").css("color","white")
+  })
+  $("#responsive").mouseout(function(){
+    $(".glyphicon-phone").css("color","white")
+    $("#responsive .service-name").css("color","#6b6b6b")
+  })
+  $("#responsive").click(function(){
+    $(".service-detail").css("background-color","#2f88f7")
+    $("#responsive_detail").show();
+    $("#custom_detail").hide();
+    $("#seo_detail").hide();
+  })
+
+  $("#custom").mouseover(function(){
+    $("#custom .glyphicon-scissors").css("color","#1ddba3")
+    $("#custom .service-name").css("color","white")
+  })
+  $("#custom").mouseout(function(){
+    $(".glyphicon-scissors").css("color","white")
+    $("#custom .service-name").css("color","#6b6b6b")
+  })
+  $("#custom").click(function(){
+    $(".service-detail").css("background-color","#1ddba3")
+    $("#custom_detail").show();
+    $("#responsive_detail").hide();
+    $("#seo_detail").hide();
+  })
+
+  $("#seo").mouseover(function(){
+    $("#seo .glyphicon-signal").css("color","#dd4e58")
+    $("#seo .service-name").css("color","white")
+  })
+  $("#seo").mouseout(function(){
+    $(".glyphicon-signal").css("color","white")
+    $("#seo .service-name").css("color","#6b6b6b")
+  })
+  $("#seo").click(function(){
+    $(".service-detail").css("background-color","#dd4e58")
+    $("#seo_detail").show();
+    $("#custom_detail").hide();
+    $("#responsive_detail").hide();
+  })
+</script>

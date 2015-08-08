@@ -2,6 +2,8 @@ body{
   height: 100%;
   width: 100%;
   font-family: 'Source Sans Pro';
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .welcome-banner{
@@ -89,6 +91,24 @@ body{
   border-radius: 0px;
 }
 
+.main-button{
+ background-color: transparent;
+ border: 3px solid white;
+ border-radius: 0px;
+ color: white;
+ box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.1);
+ transition: all 0.3s ease-in-out;
+}
+
+.main-button:hover{
+  background-color: #6BB9F0;
+  border: 3px solid white;
+  border-radius: 0px;
+  color: white;
+  box-shadow: 4px 4px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+
 .carousel {
   height: 500px;
   margin-top: 112px;
@@ -117,49 +137,101 @@ body{
 }
 
 .services{
-  background-color: white;
-  min-height: 600px;
-  padding: 20px;
+  background-color: black;
+  /*min-height: 600px;*/
+  /*padding: 20px;*/
 }
 
 .service-outer{
   text-align: center;
 }
 
+.service-detail{
+  min-height: 425px;
+  background-color: #2f88f7;
+  border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.service-detail .main-button:hover{
+  background-color: transparent;
+}
+
 .service-inner{
-  height: 250px;
+  cursor: pointer;
+}
+
+.service-detail-left{
+  min-height: 425px;
+  text-align: center;
+}
+
+.service-detail-left .glyphicon{
+  font-size: 200px;
+  margin-top: 50px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.service-name-large{
+  padding-left: 25px;
+  font-family: "Lato";
+  font-style: "normal";
+  font-weight: 300;
+  font-size: 35px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.service-detail-right{
+  /*max-width: 515px;*/
+  margin-top: 125px;
+  font-family: "Lato";
+  font-style: "normal";
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+  padding-right: 25px;
+}
+
+.service-detail-inner{
+  padding: 5% 0 0 20%;
 }
 
 .service-name{
-  font-size: 22px;
-  color: $buildery-light-blue;
+  font-family: "Lato";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 14px;
+  color: #6b6b6b;
 }
 
 .glyphicon{
-  margin-top: 20%;
   font-size: 50px;
-  color: $buildery-light-blue;
+  color: white;
   padding: 12px;
 }
 
 .contact{
-  background-color: $buildery-light-blue;
-  min-height: 600px;
+  min-height: 500px;
   text-align: center;
+  width: 100%;
+  padding: 200px 25px;
+  font-size: 16px;
+  background-color: #1f1f1f;
+  color: #b1aca0;
 }
-
-.contact-form{
-  padding: 50px 25px 25px 25px;
-  max-width: 500px;
-  margin: 0 auto;
+.contact-large{
+  font-family: "Lato";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 35px;
 }
 
 .form-control{
   border-radius: 0px;
-}
-.site-map{
-  background-color: #1f1f1f;
-  min-height: 600px;
 }
 
 .footer{
@@ -171,22 +243,3 @@ body{
   color: #b1aca0;
 }
 
-@media (min-width: 765px) and (max-width: 1055px){
-  .welcome-text-container{
-    margin: 8% 50%;
-  }
-  .welcome-banner{
-    height: 460px;
-  }
-}
-
-@media (min-width: 1400px){
-  .welcome-banner{
-    margin-top: 112px;
-    height: 720px;
-    background: url(asset-path('office.jpg')) no-repeat;
-    background-size: 100%;
-    background-color: $buildery-light-blue;
-    background-blend-mode: multiply;
-  }
-}
