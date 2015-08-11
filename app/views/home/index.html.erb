@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li>
-          <a data-scroll href="#services">our services</a>
+          <a data-scroll href="#services" id="service-link">our services</a>
         </li>
         <li>
           <a data-scroll href="#contact">contact</a>
@@ -74,7 +74,7 @@
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
       <div class="service-detail-right">
         We build fully responsive sites that will adapt
-        to any device.<br>Rather its desktop, mobile, or tablet,
+        to any device.<br>Desktop, mobile, or tablet,
         your site will always look great to your customer.
         <br><br>
 <!--         <button type="button" class="btn btn-default btn-lg main-button">
@@ -183,4 +183,18 @@
     $("#custom_detail").hide();
     $("#responsive_detail").hide();
   })
+
+var offset = 78;
+
+$('.navbar li #service-link').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+});
+
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
 </script>

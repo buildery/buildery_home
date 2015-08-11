@@ -1,4 +1,11 @@
 @media (max-width: 766px){
+  body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Sans Pro';
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .navbar-header{
     height: 75px;
     background-color: white;
@@ -87,7 +94,7 @@
   }
 
   .service-name{
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .service-name-large{
@@ -116,6 +123,13 @@
 }
 
 @media (min-width: 765px) and (max-width: 1055px){
+  body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Sans Pro';
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .welcome-text-container{
     margin: 8% 50%;
   }
@@ -143,6 +157,13 @@
 }
 
 @media (min-width: 1400px){
+  body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Sans Pro';
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .welcome-banner{
     margin-top: 112px;
     height: 720px;
