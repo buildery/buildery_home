@@ -4,6 +4,9 @@ body{
   font-family: 'Source Sans Pro';
   max-width: 100%;
   overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .welcome-banner{
