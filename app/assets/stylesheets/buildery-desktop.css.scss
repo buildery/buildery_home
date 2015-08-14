@@ -2,7 +2,11 @@ body{
   height: 100%;
   width: 100%;
   font-family: 'Source Sans Pro';
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+.overflow-wrap{
+  overflow-x: hidden !important;
 }
 
 .welcome-banner{
@@ -12,7 +16,6 @@ body{
   background-size: 100%;
   background-color: $buildery-light-blue;
   background-blend-mode: multiply;
-  overflow-x: hidden;
 }
 
 .welcome-text-container{
