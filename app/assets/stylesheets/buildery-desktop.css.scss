@@ -4,9 +4,6 @@ body{
   font-family: 'Source Sans Pro';
   max-width: 100%;
   overflow-x: hidden;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
 }
 
 .welcome-banner{
@@ -252,7 +249,7 @@ body{
 
 .footer{
   text-align: center;
-  width: 100%;
+  /*width: 100%;*/
   padding: 25px;
   font-size: 16px;
   background-color: #1f1f1f;
